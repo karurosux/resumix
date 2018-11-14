@@ -1,0 +1,19 @@
+.chips {
+  max-width: 730px;
+  margin: auto;
+  margin-top: 16px;
+
+  h4 {
+    text-align: center;
+    padding: 16px;
+  }
+
+  .chip-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .chip {
+      margin: 8px;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import '../../values.scss';
+
+.contact-card {
+  padding: 16px;
+  border: 8px solid white;
+  background-color: $primary-color !important;
+  width: 601px;
+  height: 350px;
+
+  a {
+    text-decoration: underline;
+  }
+
+  .card-picture {
+    color: white;
+    font-size: 180px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+
+  a,
+  .name-display,
+  .email-display,
+  .phone-display,
+  .linkedin-display,
+  .github-display {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .name-display {
+    position: absolute;
+    top: 48px;
+    left: 208px;
+  }
+
+  .email-display {
+    position: absolute;
+    left: 208px;
+    top: 100px;
+  }
+
+  .phone-display {
+    position: absolute;
+    left: 208px;
+    top: 147px;
+  }
+
+  .linkedin-display {
+    position: absolute;
+    top: 200px;
+    left: 40px;
+  }
+
+  .github-display {
+    position: absolute;
+    top: 247px;
+    left: 38px;
+  }
+}
