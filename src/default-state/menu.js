@@ -31,6 +31,11 @@ export default [
       text: 'Contact',
       route: '/contact',
       icon: 'Email'
+    },
+    {
+      text: 'About',
+      route: '/about',
+      icon: 'Help'
     }
   ]
 ];

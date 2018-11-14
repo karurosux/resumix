@@ -11,6 +11,7 @@ import JobHistoryContainer from './containers/job-history/job-history.container'
 import EducationContainer from './containers/education/education.container';
 import ProjectsContainer from './containers/projects/projects.container';
 import ContactContainer from './containers/contact/contact.container';
+import AboutContainer from './containers/about/about.container';
 import theme from './material-theme';
 
 class App extends React.Component {
@@ -30,6 +31,7 @@ class App extends React.Component {
                 <Route path="/education" component={EducationContainer} />
                 <Route path="/projects" component={ProjectsContainer} />
                 <Route path="/contact" component={ContactContainer} />
+                <Route path="/about" component={AboutContainer} />
                 <Redirect from="/" to="/welcome-screen" />
               </Switch>
             </Provider>
