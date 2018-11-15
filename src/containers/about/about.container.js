@@ -1,5 +1,6 @@
 import React from 'react';
-import { Typography } from '@material-ui/core';
+import { Typography, Button } from '@material-ui/core';
+import { PictureAsPdf } from '@material-ui/icons';
 import { connect } from 'react-redux';
 import BasicLayoutPresentation from '../../presentations/basic-layout/basic-layout.presentation';
 import packageJson from '../../../package.json';
@@ -22,6 +23,15 @@ const AboutContainer = props => (
         The project is not completed yet due to limitation of time, responsive, unit testing and
         other cool features waiting on the queue.
       </Typography>
+      <Button
+        variant="outlined"
+        target="_blank"
+        href={window.location.origin + '/assets/cv.pdf'}
+        className="pdf-button animated flipInX"
+      >
+        <PictureAsPdf className="pdf-icon" />
+        View PDF
+      </Button>
     </div>
   </BasicLayoutPresentation>
 );
