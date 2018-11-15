@@ -1,18 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import ThickDividerPresentation from '../../presentations/thick-divider/thick-divider.presentation';
-import FullscreenContentPresentation from '../../presentations/fullscreen-content/fullscreen-content.presentation';
-import TitlePresentation from '../../presentations/title/title.presentation';
 import MenuPresentation from '../../presentations/menu/menu.presentation';
-import BottomMessagePresentation from '../../presentations/bottom-message/bottom-message.presentation';
+import BasicLayoutPresentation from '../../presentations/basic-layout/basic-layout.presentation';
 
 const MainMenuContainer = props => (
-  <FullscreenContentPresentation>
-    <TitlePresentation>Main Menu</TitlePresentation>
-    <ThickDividerPresentation />
+  <BasicLayoutPresentation hideBackButton title="Main Menu">
     <MenuPresentation menu={props.menu} />
-    <BottomMessagePresentation />
-  </FullscreenContentPresentation>
+  </BasicLayoutPresentation>
 );
 
 export default connect(

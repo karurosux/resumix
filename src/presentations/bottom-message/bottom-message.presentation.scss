@@ -10,3 +10,18 @@
     text-decoration: underline;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .bottom-message-presentation {
+    text-align: center;
+    font-size: 0.6rem !important;
+    svg {
+      font-size: 0.6rem !important;
+    }
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}

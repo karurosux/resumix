@@ -4,7 +4,7 @@
   margin: auto;
   padding: 16px;
   border: 8px solid white;
-  background-color: $primary-color !important;
+  background-color: transparent !important;
   width: 601px;
   height: 350px;
 
@@ -58,5 +58,31 @@
     position: absolute;
     top: 247px;
     left: 38px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contact-card {
+    margin: auto;
+    width: 90%;
+    height: auto;
+
+    .card-picture {
+      position: unset;
+      display: block;
+      margin: auto;
+    }
+
+    a,
+    .name-display,
+    .email-display,
+    .phone-display,
+    .linkedin-display,
+    .github-display {
+      position: unset;
+      display: block;
+      margin: auto;
+      font-size: 1rem;
+      text-align: center;
+    }
   }
 }

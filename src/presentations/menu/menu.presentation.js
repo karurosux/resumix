@@ -6,12 +6,9 @@ import './menu.presentation.scss';
 const MenuPresentation = props => (
   <div className="buttons-container">
     {props.menu.map((buttonRow, rowIndex) => (
-      <div key={rowIndex}>
+      <div class="row-buttons" key={rowIndex}>
         {buttonRow.map(button => {
-          let text =
-            typeof button.text === 'function'
-              ? button.text(props)
-              : button.text;
+          let text = typeof button.text === 'function' ? button.text(props) : button.text;
           return (
             <BigButtonPresentation
               key={button.route}

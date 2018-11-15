@@ -1,4 +1,4 @@
-.about-container {
+.about-container .about {
   h1,
   a,
   p {
@@ -10,5 +10,26 @@
 
   a {
     text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-container {
+    .about {
+      h1,
+      a,
+      p {
+        font-size: 1rem;
+      }
+
+      p {
+        text-align: justify;
+        padding: 16px;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+    }
   }
 }

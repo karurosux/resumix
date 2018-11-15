@@ -13,12 +13,17 @@ import ProjectsContainer from './containers/projects/projects.container';
 import ContactContainer from './containers/contact/contact.container';
 import AboutContainer from './containers/about/about.container';
 import theme from './material-theme';
-
+import particleBackground from './canvas';
 class App extends React.Component {
+  componentDidMount() {
+    particleBackground();
+  }
+
   render() {
     return (
       <MuiThemeProvider theme={theme}>
         <React.Fragment>
+          <canvas id="canvas-background" />
           <CssBaseline />
           <BrowserRouter>
             <Provider store={store}>

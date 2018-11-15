@@ -27,3 +27,60 @@ a {
 *::-webkit-scrollbar-corner {
   background: transparent;
 }
+
+#canvas-background {
+  position: fixed;
+}
+
+.information-card {
+  padding: 24px;
+  border: 6px solid white;
+  background-color: transparent !important;
+  margin: 16px auto;
+  max-width: 600px;
+  &.current,
+  &.current * {
+    -webkit-animation: rainbow 2s infinite alternate;
+  }
+
+  .visit-link {
+    margin-top: 8px;
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .information-card {
+    margin: 16px;
+  }
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    border-color: hsl(41, 100%, 50%);
+    color: hsl(41, 100%, 50%);
+  }
+  20% {
+    border-color: hsl(64, 100%, 50%);
+    color: hsl(64, 100%, 50%);
+  }
+  40% {
+    border-color: hsl(133, 100%, 50%);
+    color: hsl(133, 100%, 50%);
+  }
+  60% {
+    border-color: hsl(308, 100%, 83%);
+    color: hsl(308, 100%, 83%);
+  }
+  80% {
+    border-color: hsl(184, 100%, 50%);
+    color: hsl(184, 100%, 50%);
+  }
+  100% {
+    border-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+  }
+}

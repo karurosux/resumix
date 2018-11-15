@@ -8,17 +8,13 @@ import BottomMessagePresentation from '../../presentations/bottom-message/bottom
 import './basic-layout.presentation.scss';
 
 const BasicLayoutPresentation = props => (
-  <FullscreenContainerPresentation
-    className={'basic-layout ' + props.className}
-  >
-    <BackButtonPresentation />
+  <FullscreenContainerPresentation className={'basic-layout ' + props.className}>
+    {props.hideBackButton ? '' : <BackButtonPresentation />}
     <header className="header">
       <TitlePresentation>{props.title}</TitlePresentation>
       <ThickDividerPresentation />
     </header>
-    <main className={'content' + (props.scrollable ? ' scrollable' : '')}>
-      {props.children}
-    </main>
+    <main className={'content' + (props.scrollable ? ' scrollable' : '')}>{props.children}</main>
     <footer className="footer">
       <BottomMessagePresentation />
     </footer>
@@ -29,12 +25,14 @@ BasicLayoutPresentation.propTypes = {
   children: propTypes.node.isRequired,
   title: propTypes.string.isRequired,
   className: propTypes.string,
-  scrollable: propTypes.bool
+  scrollable: propTypes.bool,
+  hideBackButton: propTypes.bool
 };
 
 BasicLayoutPresentation.defaultProps = {
   className: '',
-  scrollable: false
+  scrollable: false,
+  hideBackButton: false
 };
 
 export default BasicLayoutPresentation;

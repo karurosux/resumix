@@ -2,10 +2,11 @@ import React from 'react';
 import propTypes from 'prop-types';
 import moment from 'moment';
 import { Card, Typography } from '@material-ui/core';
-import './job-card.presentation.scss';
 
 const JobCardPresentation = props => (
-  <Card className={'job-card' + (props.job.current ? ' current' : '') + ' ' + props.className}>
+  <Card
+    className={'information-card' + (props.job.current ? ' current' : '') + ' ' + props.className}
+  >
     <Typography variant="h4">{props.job.company}</Typography>
     <Typography variant="caption">
       {moment(props.job.startDate).format('MMM YYYY') +

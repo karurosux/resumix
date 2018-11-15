@@ -7,3 +7,13 @@
     color: white;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .personal-information-container {
+    .description {
+      padding: 16px;
+      font-size: 1.5rem;
+      text-align: justify;
+    }
+  }
+}
