@@ -1,8 +1,11 @@
 import React from 'react';
 import propTypes from 'prop-types';
+import './fullscreen-content.presentation.scss';
 
 const FullscreenContentPresentation = props => (
-  <div className={'fullscreen-container ' + props.className}>{props.children}</div>
+  <div className={'fullscreen-container ' + props.className}>
+    {props.children}
+  </div>
 );
 
 FullscreenContentPresentation.propTypes = {

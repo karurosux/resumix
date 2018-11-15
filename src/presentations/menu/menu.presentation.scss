@@ -1,0 +1,12 @@
+@media only screen and (max-width: 600px) {
+  .buttons-container {
+    height: 70%;
+    overflow-y: auto;
+    overflow-x: none;
+    .big-button {
+      width: 95%;
+      margin: 8px auto !important;
+      display: block;
+    }
+  }
+}

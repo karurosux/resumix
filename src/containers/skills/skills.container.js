@@ -5,22 +5,14 @@ import LanguagesChartPresentation from '../../presentations/languages-chart/lang
 import ChipsPresentation from '../../presentations/chips/chips.presentation';
 
 class SkillsContainer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      scrollable: false
-    };
-  }
-
-  componentDidMount() {
-    setTimeout(() => this.setState({ scrollable: true }), 1000);
-  }
-
   render() {
     return (
-      <BasicLayoutPresentation title="Skills" scrollable={this.state.scrollable}>
+      <BasicLayoutPresentation title="Skills">
         <LanguagesChartPresentation languages={this.props.languages} />
-        <ChipsPresentation title="Technologies" chips={this.props.technologies} />
+        <ChipsPresentation
+          title="Technologies"
+          chips={this.props.technologies}
+        />
         <ChipsPresentation title="Favorites" chips={this.props.favorites} />
       </BasicLayoutPresentation>
     );

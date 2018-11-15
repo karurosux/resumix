@@ -2,6 +2,7 @@ import React from 'react';
 import propTypes from 'prop-types';
 import { Typography } from '@material-ui/core';
 import { BarChart, CartesianGrid, XAxis, YAxis, Bar } from 'recharts';
+import './languages-chart.presentation.scss';
 
 const getLanguagesForChartData = langs =>
   Object.keys(langs).map(lang => ({ name: lang, value: langs[lang] }));
@@ -15,7 +16,11 @@ const LanguagesChartPresentation = props => (
     >
       Languages{' '}
     </Typography>
-    <BarChart width={730} height={250} data={getLanguagesForChartData(props.languages)}>
+    <BarChart
+      width={730}
+      height={250}
+      data={getLanguagesForChartData(props.languages)}
+    >
       <CartesianGrid color="white" strokeDasharray="3 3" />
       <XAxis stroke="white" dataKey="name" />
       <YAxis stroke="white" />

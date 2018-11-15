@@ -3,6 +3,7 @@ import { Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import * as icons from '@material-ui/icons';
 import propTypes from 'prop-types';
+import './big-button.presentation.scss';
 
 const getIcon = iconName => {
   const Icon = icons[iconName];

@@ -8,12 +8,20 @@ import BottomMessagePresentation from '../../presentations/bottom-message/bottom
 import './basic-layout.presentation.scss';
 
 const BasicLayoutPresentation = props => (
-  <FullscreenContainerPresentation className={'basic-layout ' + props.className}>
+  <FullscreenContainerPresentation
+    className={'basic-layout ' + props.className}
+  >
     <BackButtonPresentation />
-    <TitlePresentation>{props.title}</TitlePresentation>
-    <ThickDividerPresentation />
-    <div className={'content' + (props.scrollable ? ' scrollable' : '')}>{props.children}</div>
-    <BottomMessagePresentation />
+    <header className="header">
+      <TitlePresentation>{props.title}</TitlePresentation>
+      <ThickDividerPresentation />
+    </header>
+    <main className={'content' + (props.scrollable ? ' scrollable' : '')}>
+      {props.children}
+    </main>
+    <footer className="footer">
+      <BottomMessagePresentation />
+    </footer>
   </FullscreenContainerPresentation>
 );
 
