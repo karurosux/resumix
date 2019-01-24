@@ -8,7 +8,7 @@ export default [
     title: 'Lead Developer',
     subtitle: null,
     startDate: moment('05/01/2014', 'DD/MM/YYYY').toDate(),
-    endDate: moment('01/08/2017', 'DD/MM/YYYY').toDate()
+    endDate: moment('01/08/2017', 'DD/MM/YYYY').toDate(),
   },
   {
     current: false,
@@ -17,15 +17,24 @@ export default [
     title: 'Javascript Developer',
     subtitle: null,
     startDate: moment('01/08/2017', 'DD/MM/YYYY').toDate(),
-    endDate: null
+    endDate: null,
   },
   {
-    current: true,
+    current: false,
     company: 'Parallel 6/PRA Health Sciences',
     website: 'https://prahs.com/',
     title: 'Software Engineer',
     subtitle: 'Frontend Developer',
     startDate: moment('01/08/2017', 'DD/MM/YYYY').toDate(),
-    endDate: null
-  }
+    endDate: moment('22/01/2019', 'DD/MM/YYYY').toDate(),
+  },
+  {
+    current: true,
+    company: 'Semantic AI',
+    website: 'https://www.semanticresearch.com/',
+    title: 'Software Engineer',
+    subtitle: 'Frontend Developer',
+    startDate: moment('23/01/2019', 'DD/MM/YYYY').toDate(),
+    endDate: null,
+  },
 ];
