@@ -46,12 +46,12 @@ module.exports = (
     process.chdir(currentDirectory);
     return (
       gulp
-      .src(path.join(currentDirectory, 'package.json'), {
-        read: false
-      })
-      .pipe(
-        shell([`npm run build`])
-      )
+        .src(path.join(currentDirectory, 'package.json'), {
+          read: false
+        })
+        .pipe(
+          shell([`npm run build`])
+        )
     );
   });
 
@@ -59,12 +59,12 @@ module.exports = (
     process.chdir(opt.temp);
     return (
       gulp
-      .src(path.join(currentDirectory, 'package.json'), {
-        read: false
-      })
-      .pipe(
-        shell(['git init', `heroku git:remote -a ${opt.server}`])
-      )
+        .src(path.join(currentDirectory, 'package.json'), {
+          read: false
+        })
+        .pipe(
+          shell(['git init', `heroku git:remote -a ${opt.server}`])
+        )
     );
   });
 

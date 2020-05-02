@@ -57,6 +57,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
+    "gulp": "gulp",
     "deploy:staging": "gulp --gulpfile ./scripts/deploy-staging.js"
   },
   "jest": {
@@ -103,16 +104,16 @@
   },
   "devDependencies": {
     "folder-scanner": "^1.0.0",
-    "gulp": "^3.9.1",
-    "gulp-clean": "^0.4.0",
-    "gulp-copy": "^4.0.1",
-    "gulp-debug": "^4.0.0",
+    "gulp": "3.4.0",
+    "gulp-clean": "0.4.0",
+    "gulp-copy": "4.0.1",
+    "gulp-debug": "4.0.0",
     "gulp-fncallback": "^2.0.2",
-    "gulp-rename": "^1.4.0",
-    "gulp-rimraf": "^0.2.2",
-    "gulp-shell": "^0.6.5",
-    "gulp-sync": "^0.1.4",
-    "node-sass": "^4.14.0",
-    "sass-loader": "^7.0.3"
+    "gulp-rename": "1.4.0",
+    "gulp-rimraf": "0.2.2",
+    "gulp-shell": "0.6.5",
+    "gulp-sync": "0.1.4",
+    "node-sass": "4.14.0",
+    "sass-loader": "7.0.3"
   }
 }
