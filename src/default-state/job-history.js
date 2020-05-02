@@ -17,7 +17,7 @@ export default [
     title: 'Javascript Developer',
     subtitle: null,
     startDate: moment('01/08/2017', 'DD/MM/YYYY').toDate(),
-    endDate: null,
+    endDate: moment('2019', 'YYYY').toDate(),
   },
   {
     current: false,
@@ -31,8 +31,8 @@ export default [
   {
     current: true,
     company: 'Semantic AI',
-    website: 'https://www.semanticresearch.com/',
-    title: 'Software Engineer',
+    website: 'https://www.semantic-ai.com/',
+    title: 'Sr. Software Engineer',
     subtitle: 'Frontend Developer',
     startDate: moment('23/01/2019', 'DD/MM/YYYY').toDate(),
     endDate: null,

@@ -112,7 +112,7 @@
     "gulp-rimraf": "^0.2.2",
     "gulp-shell": "^0.6.5",
     "gulp-sync": "^0.1.4",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.14.0",
     "sass-loader": "^7.0.3"
   }
 }
